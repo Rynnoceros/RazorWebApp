@@ -1,0 +1,21 @@
+﻿@page "{id:int}"
+@model EditModel
+
+<h2>Edit</h2>
+
+<p>Edit your name : </p>
+
+<form method="post">
+    <!--<div asp-validation-summary="All"></div>-->
+    
+    <div>
+        <input type="hidden" asp-for="Customer.Id"/>
+        Name: <input asp-for="Customer.Name">
+    </div>
+    <span asp-validation-for="Customer.Name"></span>
+    <br>
+    <input type="submit"/>
+</form>
+@{
+
+}
