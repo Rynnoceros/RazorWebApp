@@ -20,6 +20,13 @@ namespace RazorWebApp.Pages
             private set;
         }
 
+        [TempData]
+        public string Message
+        {
+            get;
+            set;
+        }
+
         public IndexModel(AppDbContext db)
         {
             _db = db;
